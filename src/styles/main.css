@@ -1,0 +1,45 @@
+.home {
+    padding-top: 100px;
+}
+
+.landing-banner {
+    max-width: 950px;
+    width: calc(90% - 80px);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(210, 255, 210); */
+    background: rgb(199,227,231);
+background: linear-gradient(90deg, rgb(222, 251, 255) 0%, rgba(108,221,228,1) 48%, rgb(0, 255, 242) 100%);
+    box-shadow: 2px 2px 5px rgba(0, 145, 77, 0.726);
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.landing-banner img {
+    object-fit: contain;
+    width: 280px;
+}
+
+.landing-banner h1 {
+    font-size: 60px;
+    padding-right: 40px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.534);
+}
+
+.landing-banner button {
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+    color: white;
+    height: 35px;
+    width: 160px;
+    font-size: 18px;
+    background-color: rgb(0, 136, 255);
+    box-shadow: 2px 2px 5px rgba(0, 136, 255, 0.514);
+    cursor: pointer;
+}
