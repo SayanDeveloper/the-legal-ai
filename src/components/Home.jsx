@@ -7,6 +7,8 @@ import conny from "../assets/conny.svg"
 import mission from "../assets/MISSION.png"
 import arpit from "../assets/arpit.png"
 import tessia from "../assets/tessia.png"
+import Section2 from './Section2'
+import FirstSubpage from './FirstSubpage'
 
 const Home = () => {
     return (
@@ -60,6 +62,8 @@ const Home = () => {
                     <Text fontWeight={600} fontSize="20px" mb="10px">3. Geld erhalten</Text>
                     Wenn der Reiseveranstalter die Erstattung leistet, überweisen wir den Betrag umgehend auf Dein Konto. Unser Service ist für Dich ohne Risiko, denn LegalAI arbeitet rein erfolgsbasiert. Nur im Erfolgsfall berechnen wir ein Honorar in Höhe von 25% inkl. MwSt. Für unsere Kunden mit Rechtsschutzversicherung ist unser Service kostenlos, wir rechnen direkt mit der Versicherung ab..
                 </Box>
+
+                <Section2 />
 
                 <Text fontWeight={600} fontSize="35px" textAlign="center" mt="60px" color="#013852">UNS VERTRAUEN</Text>
                 <Flex gap="80px" justifyContent="center" wrap="wrap" mb="60px">
