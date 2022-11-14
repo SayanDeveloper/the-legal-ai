@@ -14,9 +14,17 @@ const Section2 = () => {
             grabCursor={true}
             modules={[Navigation]}
             className="mySwiper"
-            slidesPerView={3}
+            slidesPerView={1}
             navigation
             spaceBetween={20}
+            breakpoints={{
+                600: {
+                    slidesPerView: 2,
+                },
+                900: {
+                    slidesPerView: 3,
+                },
+            }}
         >
             <SwiperSlide>
                 <Card 

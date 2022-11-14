@@ -4,7 +4,7 @@
 
 .landing-banner {
     max-width: 1200px;
-    width: calc(90% - 80px);
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -12,10 +12,6 @@
     padding: 40px;
     border-radius: 10px;
     margin-top: 20px;
-}
-
-.landing-banner > div {
-    width: 50%;
 }
 
 .landing-banner img {

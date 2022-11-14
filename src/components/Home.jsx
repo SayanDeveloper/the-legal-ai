@@ -13,8 +13,8 @@ import FirstSubpage from './FirstSubpage'
 const Home = () => {
     return (
         <Box className='home'>
-            <Box className='landing-banner'>
-                <Box>
+            <Flex gap="30px" className='landing-banner' direction={{ base: "column-reverse", lg: "row" }} alignItems="center">
+                <Box  w={{ base: "100%", lg: "50%" }}>
                     <h2>VERKAUFE DEIN PROBLEM!</h2>
                     <Text as="h1" fontSize="40px" pr="40px"  lineHeight={"1.3em"} mt="20px" mb="30px">
                         Dein Strom- oder Gasvertrag wurde gekündigt?
@@ -25,7 +25,7 @@ const Home = () => {
                     <button>Jetzt kostenlos anfragen</button>
                 </Box>
                 <img src={banner} alt="banner" />
-            </Box>
+            </Flex>
 
             <Text fontWeight={600} fontSize="35px" textAlign="center" mt="60px" color="#013852">So funktioniert's </Text>
             <Text w="80%" maxW="1000px" margin="auto" mt="10px" textAlign="center" color="#013852" fontWeight={500} mb="50px">
@@ -34,9 +34,9 @@ const Home = () => {
             </Text>
 
             <Box w="90%" maxW="1100px" margin="auto">
-                <Box py="30px" px="120px" w="90%" boxShadow={"1px 1px 4px #00000044"} margin="auto"
-                    borderRadius={"5px"} mb="30px" pos="relative" >
-                    <Image src={conny} w="150px" pos="absolute" top="50%" transform={"translateY(-50%)"} left="-60px" />
+                <Box py="30px" px={{base: "30px", md:"120px"}} w="90%" boxShadow={"1px 1px 4px #00000044"} margin="auto"
+                    borderRadius={"5px"} mb={{base: "50px", md: "30px"}} pos="relative" >
+                    <Image src={conny} w={{base: "80px", md: "150px"}} pos="absolute" top={{ base: "0px", md:"50%"}} transform={"translateY(-50%)"} left={{base: "-20px", md:"-60px"}} />
                     <Text fontWeight={600} fontSize="20px" mb="10px">1. Reisedetails eingeben</Text>
                     Wir prüfen unter Einsatz modernster Technologie sowie mit Hilfe unserer 
                     <br/>
@@ -46,9 +46,9 @@ const Home = () => {
                     <br/>
                     Unser Algorithmus ermöglicht es in vielen Fällen, bereits mit Übermittlung Deiner Falldaten zu ermitteln, ob Du einen Anspruch gegen den Reiseveranstalter hast und wenn ja, in welcher Höhe.
                 </Box>
-                <Box py="30px" px="120px" w="90%" boxShadow={"1px 1px 4px #00000044"} margin="auto"
-                    borderRadius={"5px"} mb="30px" pos="relative" >
-                    <Image src={conny} w="150px" pos="absolute" top="50%" transform={"translateY(-50%)"} right="-60px" />
+                <Box py="30px" px={{base: "30px", md:"120px"}} w="90%" boxShadow={"1px 1px 4px #00000044"} margin="auto"
+                    borderRadius={"5px"} mb={{base: "50px", md: "30px"}} pos="relative" >
+                    <Image src={conny} w={{base: "80px", md: "150px"}} pos="absolute" top={{ base: "0px", md:"50%"}} transform={"translateY(-50%)"} left={{base: "-20px", md: "unset"}} right={{md: "-60px"}}  />
                     <Text fontWeight={600} fontSize="20px" mb="10px">2. Erstattung beauftragen</Text>
                     Sollte ein Anspruch bestehen, kannst Du uns nun damit beauftragen, Deinen Anspruch beim Reiseveranstalter durchzusetzen. Falls nötig, verhelfen renommierte Reiserechtsanwälte Dir auch vor Gericht zu Deinem Recht. Wir halten Dich zum Stand des Verfahrens stets auf dem Laufenden.
                     <br/>
@@ -56,9 +56,9 @@ const Home = () => {
                     <br/>
                     Bei noch offenen Fragen kontaktieren Dich unsere Rechtsexperten auch telefonisch für ein persönliches Gespräch. Solltest Du beim Ausfüllen des Fragebogens bestimmte Reisedokumente oder weitere Unterlagen (z.B. Beweismittel) noch nicht hochgeladen haben, kannst Du dies bequem nachholen durch Übermittlung der Unterlagen an unsere E-Mail-Adresse info@legalai.io.
                 </Box>
-                <Box py="30px" px="120px" w="90%" boxShadow={"1px 1px 4px #00000044"} margin="auto"
-                    borderRadius={"5px"} mb="30px" pos="relative" >
-                    <Image src={conny} w="150px" pos="absolute" top="50%" transform={"translateY(-50%)"} left="-60px" />
+                <Box py="30px" px={{base: "30px", md:"120px"}} w="90%" boxShadow={"1px 1px 4px #00000044"} margin="auto"
+                    borderRadius={"5px"} mb={{base: "50px", md: "30px"}} pos="relative" >
+                    <Image src={conny} w={{base: "80px", md: "150px"}} pos="absolute" top={{ base: "0px", md:"50%"}} transform={"translateY(-50%)"} left={{base: "-20px", md:"-60px"}} />
                     <Text fontWeight={600} fontSize="20px" mb="10px">3. Geld erhalten</Text>
                     Wenn der Reiseveranstalter die Erstattung leistet, überweisen wir den Betrag umgehend auf Dein Konto. Unser Service ist für Dich ohne Risiko, denn LegalAI arbeitet rein erfolgsbasiert. Nur im Erfolgsfall berechnen wir ein Honorar in Höhe von 25% inkl. MwSt. Für unsere Kunden mit Rechtsschutzversicherung ist unser Service kostenlos, wir rechnen direkt mit der Versicherung ab..
                 </Box>
@@ -78,8 +78,8 @@ const Home = () => {
                 <Text w="80%" maxW="1000px" margin="auto" mt="10px" textAlign="center" color="#013852" fontWeight={500} mb="50px">
                     Der einfache Weg zur Gerechtigkeit
                 </Text>
-                <Flex w="100%" gap="100px">
-                    <Image src={mission} w="40%" objectFit={"contain"} justifyContent="space-between" />
+                <Flex w="100%" gap="100px" direction={{ base: "column", md: "row" }}>
+                    <Image src={mission} w={{ base: "70%", md: "40%" }} objectFit={"contain"} justifyContent="space-between" margin="auto" />
                     <Box>
                         <Text fontWeight={500}>Unsere Mission ist einfach: Wir verhelfen Menschen zu Ihrem Recht!</Text>
                         <Text mb="15px">
