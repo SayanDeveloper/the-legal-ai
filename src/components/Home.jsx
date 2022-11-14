@@ -7,6 +7,10 @@ import conny from "../assets/conny.svg"
 import mission from "../assets/MISSION.png"
 import arpit from "../assets/arpit.png"
 import tessia from "../assets/tessia.png"
+import dafund from "../assets/dafund.png"
+import EF from "../assets/EF.png"
+import FF from "../assets/FF.png"
+import growF from "../assets/Growf.png"
 import Section2 from './Section2'
 import FirstSubpage from './FirstSubpage'
 
@@ -67,10 +71,10 @@ const Home = () => {
 
                 <Text fontWeight={600} fontSize="35px" textAlign="center" mt="60px" color="#013852">UNS VERTRAUEN</Text>
                 <Flex gap="80px" justifyContent="center" wrap="wrap" mb="60px">
-                    <Image w="120px" objectFit="contain" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/48e0a2c0-59fe-4231-aa18-1a2c7a7232a3/dafund_picture.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221113T182041Z&X-Amz-Expires=86400&X-Amz-Signature=876b4ea3819df350862f0a16938c54b7879843bb7cc62c85e44b969eab9d0b88&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22dafund%2520picture.png%22&x-id=GetObject" />
-                    <Image w="120px" objectFit="contain" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d5507459-1210-43d8-a546-be178aa2f7a7/EF_logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221113T195324Z&X-Amz-Expires=86400&X-Amz-Signature=c769bf5c6c334f23463079cd3571e28fff550989dd964757f2c824275441de65&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22EF%2520logo.png%22&x-id=GetObject" />
-                    <Image w="120px" objectFit="contain" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a01a6372-3126-4c0e-a9bb-c3cdedb2eb4a/Female_Founders_Logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221113T182057Z&X-Amz-Expires=86400&X-Amz-Signature=0656440c9bb08542bc82e2af41b68d17f3a78f1837b871d60c9f028663f2e1a1&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Female%2520Founders%2520Logo.png%22&x-id=GetObject" />
-                    <Image w="120px" objectFit="contain" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4e348105-993b-4c98-bbf8-9727826008fd/Growf.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221113T182100Z&X-Amz-Expires=86400&X-Amz-Signature=1f88f7aee8395517ac945f9821ed418098af13ee055632af9208dd56d08f9d4c&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Growf.png%22&x-id=GetObject" />
+                    <Image w="120px" objectFit="contain" src={dafund} />
+                    <Image w="120px" objectFit="contain" src={EF} />
+                    <Image w="120px" objectFit="contain" src={FF} />
+                    <Image w="120px" objectFit="contain" src={growF} />
                     <Image w="120px" objectFit="contain" src="https://thelegalai.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3595a5ed-2271-43a0-b5ed-b413144f875c%2FUntitled.png?table=block&id=c82af46a-76b7-4ccd-ad2a-5c8d8f816579&spaceId=f3346966-31ed-4391-8e7f-50fa40532ee9&width=2000&userId=&cache=v2" />
                 </Flex>
 
